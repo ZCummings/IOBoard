@@ -4,6 +4,10 @@ Dashing.gridsterLayout('[{"col":1,"row":1},{"col":1,"row":2},{"col":1,"row":3},{
   Dashing.widget_base_dimensions = [370, 134]
   Dashing.numColumns = 5
 });
+
+function box_click(color){
+    document.getElementById("box").style.backgroundColor=color;
+}
 </script>
 
 
@@ -12,7 +16,8 @@ Dashing.gridsterLayout('[{"col":1,"row":1},{"col":1,"row":2},{"col":1,"row":3},{
 <div class="gridster">
   <ul>
     <li data-row="1" data-col="1" data-sizex="1" data-sizey="1">
-      <div data-view="Text"></div>
+      <a data-id="welcome" id="box" data-text="Albedo" data-view="Text" color="light_green" onclick="box_click('red')" href="http://www.goalbedo.com" target="_blank">
+      </a>
     </li>
 
     <li data-row="1" data-col="1" data-sizex="1" data-sizey="1">
